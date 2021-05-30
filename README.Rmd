@@ -1,5 +1,4 @@
 ---
-title: "README"
 output: github_document
 ---
 
@@ -9,7 +8,7 @@ library(here)
 library(tidyverse)
 ```
 
-## Constituciones Políticas de Nicaragua
+# Constituciones Políticas de Nicaragua
 
 Este repositorio continue cuatro constituciones políticas de Nicaragua de los años: 
 
@@ -20,7 +19,7 @@ Este repositorio continue cuatro constituciones políticas de Nicaragua de los a
 
 También se encuentra una base complete `all` que contiene todas las constituciones en un solo archivo.
 
-## Uso
+# Uso
 
 Los datos se encuentran en la carpeta `/data` en formatos `.rds` y `.csv`, y contienen las siguientes variables: 
 
@@ -40,6 +39,6 @@ cons_2014 <- read_rds(here("data", "cons_2014.rds"))
 cons_2014
 ```
 
-## Comentarios y sugerencias
+# Comentarios y sugerencias
 
 Para realizar comentarios o sugerencias sobre la base de datos puedes abrir un issue en este repositorio: https://github.com/RRMaximiliano/constituciones/issues

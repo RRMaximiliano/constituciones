@@ -1,7 +1,5 @@
-README
-================
 
-## Constituciones Políticas de Nicaragua
+# Constituciones Políticas de Nicaragua
 
 Este repositorio continue cuatro constituciones políticas de Nicaragua
 de los años:
@@ -14,7 +12,7 @@ de los años:
 También se encuentra una base complete `all` que contiene todas las
 constituciones en un solo archivo.
 
-## Uso
+# Uso
 
 Los datos se encuentran en la carpeta `/data` en formatos `.rds` y
 `.csv`, y contienen las siguientes variables:
@@ -46,7 +44,7 @@ cons_2014
     ## 10 2014     10 Evocando                              PREÁMBU~ <NA>  <NA>  PREÁM~
     ## # ... with 705 more rows
 
-## Comentarios y sugerencias
+# Comentarios y sugerencias
 
 Para realizar comentarios o sugerencias sobre la base de datos puedes
 abrir un issue en este repositorio:
