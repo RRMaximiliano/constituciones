@@ -63,12 +63,19 @@ df <- cons_df %>%
 
 # Export dataset ----------------------------------------------------------
 
+## Rds ----
 df %>% 
   group_split(year) %>% 
   iwalk(~ write_rds(.x, here("data", str_c("cons_", .y, ".rds"))))
+
+## CSV ----
+df %>% 
+  group_split(year) %>% 
+  iwalk(~ write_csv(.x, here("data", str_c("cons_", .y, ".csv"))))
   
 # Rename files ------------------------------------------------------------
 
+## RDS ----
 file.rename(here("data", "cons_1.rds"), 
             here("data", "cons_1974.rds"))
 file.rename(here("data", "cons_2.rds"), 
@@ -78,4 +85,17 @@ file.rename(here("data", "cons_3.rds"),
 file.rename(here("data", "cons_4.rds"), 
             here("data", "cons_2014.rds"))
 
-write_rds(df, here("data", "all.rds"))            
+write_rds(df, here("data", "all.rds"))  
+
+## CSV ----
+file.rename(here("data", "cons_1.csv"), 
+            here("data", "cons_1974.csv"))
+file.rename(here("data", "cons_2.csv"), 
+            here("data", "cons_1987.csv"))
+file.rename(here("data", "cons_3.csv"), 
+            here("data", "cons_2010.csv"))
+file.rename(here("data", "cons_4.csv"), 
+            here("data", "cons_2014.csv"))
+
+write_csv(df, here("data", "all.csv"))  
+          

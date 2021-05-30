@@ -11,10 +11,13 @@ de los años:
 3.  2010
 4.  2014
 
+También se encuentra una base complete `all` que contiene todas las
+constituciones en un solo archivo.
+
 ## Uso
 
-Los datos se encuentran en la carpeta `/data` en formato `.rds`, y
-contienen las siguientes variables:
+Los datos se encuentran en la carpeta `/data` en formatos `.rds` y
+`.csv`, y contienen las siguientes variables:
 
 1.  `year`: Año de publicación.
 2.  `line`: Línea en el texto extraído de la Asamblea Nacional.
