@@ -1,0 +1,43 @@
+---
+title: "README"
+output: github_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+```
+
+## Constituciones Políticas de Nicaragua
+
+Este repositorio continue cuatro constituciones políticas de Nicaragua de los años: 
+
+1. 1974
+2. 1987
+3. 2010
+4. 2014
+
+## Uso
+
+Los datos se encuentran en la carpeta `/data` en formato `.rds`, y contienen las siguientes variables: 
+
+1. `year`: Año de publicación.
+2. `line`: Línea en el texto extraído de la Asamblea Nacional.
+3. `text`: Texto de la constitución de acuerdo a la línea.
+4. `titulo`: Título de la constitución.
+5. `cap`: Capítulo de la constitución (por Título).
+6. `art`: Artículo de la constitución.
+7. `tema`: Tema de la constitución (por Título). 
+
+```{r, include = FALSE}
+cons_2014 <- read_rds(here("data", "cons_2014.rds"))
+```
+
+```{r}
+cons_2014
+```
+
+## Comentarios y sugerencias
+
+Para realizar comentarios o sugerencias sobre la base de datos puedes abrir un issue en este repositorio: https://github.com/RRMaximiliano/constituciones/issues
