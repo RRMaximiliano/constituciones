@@ -26,6 +26,9 @@ Los datos se encuentran en la carpeta `/data` en formatos `.rds` y
 7.  `tema`: Tema de la constitución (por Título).
 
 ``` r
+# Cargar datos
+cons_2014 <- read_rds(here("data", "cons_2014.rds"))
+
 cons_2014
 ```
 
